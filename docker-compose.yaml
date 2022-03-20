@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - 27018:27018
+    networks:
+      - default
+
+  order:
+    container_name: order
+    build:
+      context: ./order
+    ports:
+      - 5001:5001
+    links:
+      - mongo
+    networks:
+      - default
+  
+  payment:
+    container_name: payment
+    build:
+      context: ./payment
+    ports:
+      - 5003:5003
+    links:
+      - mongo
+    networks:
+      - default
+  
+networks:
+  default:

@@ -1,0 +1,18 @@
+{
+  "name": "be-test",
+  "version": "1.0.0",
+  "description": "BE Test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.6.1",
+    "axios": "^0.19.0",
+    "aws-serverless-express": "^3.3.8"
+  }
+}

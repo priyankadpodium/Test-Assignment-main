@@ -1,0 +1,29 @@
+{
+  "name": "be-practice",
+  "version": "1.0.0",
+  "description": "be-practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.594.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.6.1",
+    "axios": "^0.19.0",
+    "node-cron": "^2.0.3",
+    "express-validator": "^6.1.1",
+    "aws-serverless-express": "^3.3.8",
+    "jest": "^25.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}

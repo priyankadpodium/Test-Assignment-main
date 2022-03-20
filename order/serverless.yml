@@ -1,0 +1,16 @@
+service: api
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  order-api:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: get
+      - http:
+          path: /{proxy+}
+          method: any
